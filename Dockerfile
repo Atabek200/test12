@@ -8,12 +8,12 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 
-COPY requirements.txt /app/
+COPY reg.txt /app/
 
 
-RUN pip install -r requirements.txt
+RUN pip install -r reg.txt
 
 COPY . /app/
 
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:80"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8088"]
