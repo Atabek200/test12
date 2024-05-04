@@ -1,17 +1,28 @@
+{% load static %}
 <!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <h2>dsmnvibuyhvnj</h2>
-    <nav>
-        <input type="text" class="Введите email">
-        <input type="password" class="Введите пароль">
-    </nav>
+   <div class="container">
+    <form id="register-form">
+      <h2>Регистрация</h2>
+      <input type="text" placeholder="Имя пользователя" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <form id="login-form">
+      <h2>Вход</h2>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+    </form>
+  </div>
 </body>
 </html>
