@@ -1,9 +1,8 @@
 .font {
-    margin: 0;
-    padding: 0;
     width: 20%;
-    height: 15%;
-    text-align: center;
+    height: 15px;
+    text-align: left;
     text-decoration: none;
     justify-content: center;
 }
+
