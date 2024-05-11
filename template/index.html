@@ -1,27 +1,67 @@
-{% load static %}
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" href="{% static 'style.css' %}">
+  <title>Создание заявки</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 50%;
+      margin: 50px auto;
+    }
+
+    form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    form label,
+    form input,
+    form textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form input[type="file"] {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-   <div class="container">
-    <form id="register-form">
-      <h2>Регистрация</h2>
-      <input type="text" placeholder="Имя пользователя" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Пароль" required>
-      <button type="submit">Зарегистрироваться</button>
-    </form>
-    <form id="login-form">
-      <h2>Вход</h2>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Пароль" required>
-      <button type="submit">Войти</button>
+  <div class="container">
+    <h2>Создание заявки</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="equipment">Информация о технике:</label>
+      <input type="text" id="equipment" name="equipment" required>
+
+      <label for="issue">Описание неисправности:</label>
+      <textarea id="issue" name="issue" rows="4" required></textarea>
+
+      <label for="service-time">Желаемое время обслуживания:</label>
+      <input type="datetime-local" id="service-time" name="service-time" required>
+
+      <label for="attachments">Прикрепить фотографии или документы:</label>
+      <input type="file" id="attachments" name="attachments" multiple>
+
+      <input type="submit" value="Отправить заявку">
     </form>
   </div>
 </body>
