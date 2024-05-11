@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание выполнения работ</title>
+    <link rel="stylesheet" href="{% static 'sty2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Отслеживание выполнения работ</h1>
+        <div class="status">
+            <h2>Статус заявки:</h2>
+            <select id="statusSelect">
+                <option value="выполнено">Выполнено</option>
+                <option value="в процессе">В процессе</option>
+                <option value="отложено">Отложено</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

@@ -12,6 +12,22 @@ def index(request):
     return render(request, 'index.html')
 
 
+def Appointmentofthemaster(request):
+    return render(request, 'Administrative functionality.html')
+
+
+def Workprogresstracking(request):
+    return render(request, 'Appointment of the master.html')
+
+
+def Notifications(request):
+    return render(request, 'Notifications.html')
+
+
+def Administrativefunctionality(request):
+    return render(request, 'Work progress tracking.html')
+
+
 class CarBrandView(ListCreateAPIView):
     queryset = CarBrand.objects.all()
     serializer_class = CarBrandSerializer

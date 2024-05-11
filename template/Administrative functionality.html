@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Назначение мастера</title>
+  <link rel="stylesheet" href="{% static 'sty1.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Назначение мастера</h1>
+    <form action="#">
+      <label for="master">Выберите мастера:</label>
+      <select id="master" name="master">
+        <option value="master1">Мастер 1</option>
+        <option value="master2">Мастер 2</option>
+        <option value="master3">Мастер 3</option>
+        <!-- Добавьте других мастеров по мере необходимости -->
+      </select>
+      <label for="spec">Специализация мастера:</label>
+      <input type="text" id="spec" name="spec" readonly value="Специализация мастера">
+      <label for="availability">Доступность мастера:</label>
+      <input type="text" id="availability" name="availability" readonly value="Доступность мастера">
+      <button type="submit">Назначить</button>
+    </form>
+  </div>
+</body>
+</html>
