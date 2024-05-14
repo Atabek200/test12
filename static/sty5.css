@@ -1,0 +1,25 @@
+.requirements {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.requirements h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.requirements li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .requirements {
+        padding: 10px;
+    }
+}

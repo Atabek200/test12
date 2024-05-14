@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система управления заявками</title>
+    <link rel="stylesheet" href="{% static 'sty11.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Система управления заявками на обслуживание и ремонт техники</h1>
+    </header>
+    <main>
+        <form>
+            <label for="requestType">Тип заявки:</label>
+            <select id="requestType" name="requestType">
+                <option value="maintenance">Обслуживание</option>
+                <option value="repair">Ремонт</option>
+            </select>
+            <label for="description">Описание проблемы:</label>
+            <textarea id="description" name="description"></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Система управления заявками</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, section, footer {
+  padding: 20px;
+}
+
+/* Стили для десктопных устройств */
+@media only screen and (min-width: 768px) {
+  header, footer {
+    background-color: #333;
+    color: #fff;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

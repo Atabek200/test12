@@ -28,6 +28,34 @@ def Administrativefunctionality(request):
     return render(request, 'Work progress tracking.html')
 
 
+def interface(request):
+    return render(request, 'interface.html')
+
+
+def Safety(request):
+    return render(request, 'Safety.html')
+
+
+def Performance(request):
+    return render(request, 'Performance.html')
+
+
+def Scalability(request):
+    return render(request, 'Scalability.html')
+
+
+def Technologystack(request):
+    return render(request, 'Technology stack.html')
+
+
+def Workplan(request):
+    return render(request, 'Work plan.html')
+
+
+def Expectedresults(request):
+    return render(request, 'Expected results.html')
+
+
 class CarBrandView(ListCreateAPIView):
     queryset = CarBrand.objects.all()
     serializer_class = CarBrandSerializer

@@ -62,5 +62,3 @@ class ProtectedView(APIView):
 def approve_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
     return redirect(request, 'comment_list', comment)
-
-
