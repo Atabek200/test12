@@ -7,39 +7,7 @@
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <title>Создание заявки</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    .container {
-      width: 50%;
-      margin: 50px auto;
-    }
-
-    form {
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    form label,
-    form input,
-    form textarea {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    form input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
 
     form input[type="file"] {
       margin-top: 10px;
@@ -63,24 +31,27 @@
       <input type="file" id="attachments" name="attachments" multiple>
 
       <input type="submit" value="Отправить заявку">
-    </form>
-  </div>
-    <section class="font-if">
-        <div class="font">
+
+
+      <section class="font-if">
+        <div class="btn">
             <ul>
-                <li><a href="{% url 'masters' %}">Appointment of the master</a></li>
-                <li><a href="{% url 'tracking' %}">Work progress tracking</a></li>
-                <li><a href="{% url 'notifications' %}">Notifications</a></li>
-                <li><a href="{% url 'administrative' %}">Administrative functionality</a></li>
-                <li><a href="{% url 'interface' %}">interface</a></li>
-                <li><a href="{% url 'safety' %}">safety</a></li>
-                <li><a href="{% url 'performance' %}">performance</a></li>
-                <li><a href="{% url 'scalability' %}">scalability</a></li>
-                <li><a href="{% url 'technology_stack' %}">technology_stack</a></li>
-                <li><a href="{% url 'work_plan' %}">work_plan</a></li>
-                <li><a href="{% url 'expected_results' %}">expected_results</a></li>
+                <li><a href="{% url 'masters' %}">Назначение мастера</a></li>
+                <li><a href="{% url 'tracking' %}">Отслеживание хода работы</a></li>
+                <li><a href="{% url 'notifications' %}">Уведомления</a></li>
+                <li><a href="{% url 'administrative' %}">Административный функционал</a></li>
+                <li><a href="{% url 'interface' %}">интерфейс</a></li>
+                <li><a href="{% url 'safety' %}">безопасность</a></li>
+                <li><a href="{% url 'performance' %}">производительность</a></li>
+                <li><a href="{% url 'scalability' %}">масштабируемость</a></li>
+                <li><a href="{% url 'technology_stack' %}">стек технологий</a></li>
+                <li><a href="{% url 'work_plan' %}">План работы</a></li>
+                <li><a href="{% url 'expected_results' %}">Ожидаемые результаты</a></li>
             </ul>
         </div>
-    </section>
+      </section>
+    </form>
+
+  </div>
 </body>
 </html>

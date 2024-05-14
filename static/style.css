@@ -1,7 +1,56 @@
-.font {
-    width: 20%;
-    height: 15px;
-    text-align: left;
-    text-decoration: none;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn {
+    font-size: 20px;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #0c0e0d, #627072, #0f1312);
+    text-decoration: none;
+    padding: 20px 70px;
+    border-radius: 10px;
+    background-size: 200%;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-position: right;
+}
+
+
+
